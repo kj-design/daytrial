@@ -1,0 +1,285 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul, li, dl, dt, dd {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  opacity: 0.6;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 959px) {
+  html {
+    font-size: 54.70%;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  html {
+    font-size: 46.90%;
+  }
+}
+
+header {
+  padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+header h1 {
+  font-size: 2.7rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  header ul {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header ul li:not(:last-child) {
+  margin-right: 4rem;
+}
+
+header ul a {
+  font-weight: bold;
+}
+
+.main-visual {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .main-visual {
+    margin-top: 2rem;
+  }
+}
+
+.main-visual img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
+}
+
+.main-visual .mv-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+}
+
+.main-visual .mv-txt h2 {
+  font-size: 3rem;
+}
+
+.about {
+  margin-top: 500px;
+  width: 80%;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+}
+
+.about_detail {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+  .about_detail {
+    display: block;
+  }
+}
+
+.about_detail img {
+  width: 45%;
+}
+
+@media screen and (max-width: 800px) {
+  .about_detail img {
+    width: 95%;
+  }
+}
+
+.about_detail p {
+  width: 45%;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .about_detail p {
+    width: 95%;
+    margin: 3rem auto 0 auto;
+  }
+}
+
+.information {
+  width: 80%;
+  margin: 6rem auto 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .information {
+    width: 90%;
+  }
+}
+
+.information h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.information .informations {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .information .informations {
+    display: block;
+  }
+}
+
+.information .informations .information_cards {
+  width: 32%;
+}
+
+@media screen and (max-width: 800px) {
+  .information .informations .information_cards {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .information .informations .information_cards:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.form p {
+  margin-top: 3rem;
+}
+
+.form input {
+  width: 40%;
+  line-height: 3.5rem;
+  border-radius: 15px;
+  border: 0.5px solid #333;
+}
+
+.form input:focus {
+  background-color: rgba(135, 207, 235, 0.74);
+  outline: none;
+  padding-left: 1rem;
+  border-color: gray;
+  border-width: 1.2px;
+}
+
+.form .free_box {
+  width: 25%;
+  margin: 3rem auto 0 auto;
+  background-color: #f08274;
+  line-height: 4rem;
+  border-radius: 5px;
+}
+
+.form .free_box a {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .form input {
+    width: 70%;
+  }
+  .form .free_box {
+    width: 70%;
+  }
+}
+
+footer {
+  margin-top: 8rem;
+  width: 100%;
+  text-align: right;
+  background-color: silver;
+}
+/*# sourceMappingURL=style.css.map */

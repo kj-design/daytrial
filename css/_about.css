@@ -1,0 +1,21 @@
+.about {
+  margin-top: 500px;
+  width: 80%;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+}
+
+.about_detail {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_detail img {
+  width: 45%;
+}
+
+.about_detail p {
+  width: 45%;
+  text-align: center;
+}
